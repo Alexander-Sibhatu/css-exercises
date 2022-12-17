@@ -9,9 +9,14 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  flex: 0 1 auto;
+  min-width: 400px;
 }
 
 .profile-image {
@@ -23,6 +28,8 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: space-around;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -45,4 +52,16 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-right: auto;
+}
+
+.left-header {
+  display: flex;
+  gap: 8px;
 }
