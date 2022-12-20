@@ -8,8 +8,12 @@ body {
 
 .header {
   display: flex;
-  font-weight: bold;
   align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px;
+
+
   height: 72px;
   background: darkmagenta;
   color: white;
@@ -29,27 +33,31 @@ body {
 }
 
 .sidebar {
+  flex-shrink: 0;
   width: 300px;
   background: royalblue;
+
+
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+
+  padding: 16px;
   width: 300px;
-  margin: 12px;
+  margin: 16px;
 }
 
 .content {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-self: stretch;
 }
 
 .cards {
-  flex: 1;
+  padding: 32px;
   display: flex;
   flex-wrap:  wrap;
 }
@@ -57,13 +65,15 @@ body {
 a {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-ul > li {
-  margin-bottom: 12px;
+li {
+  margin-bottom: 16px;
 }
